@@ -1,0 +1,23 @@
+.table{
+    width: 50%
+}
+.table tr{
+    height: 50px
+}
+.str tr:nth-last-child(2n+1){
+    background: rgba(95, 100, 138, 0.7)
+}
+.str tr:nth-last-child(2n){
+    background: rgba(95, 100, 138, 0.2)
+}
+
+th{text-transform: capitalize;
+    background:rgba(95, 100, 138, 0.2)
+}
+.str  tr:hover {
+  background: rgba(96, 125, 139, 0.5);
+  cursor: pointer;
+} 
+#zg{
+    text-transform: capitalize;
+}
