@@ -1,0 +1,26 @@
+h1{
+    background:blue;
+    color:red;
+    padding:10px 210px;
+    margin-bottom:50px;
+}
+.one{
+    background:grey;
+    color:black;
+    font-size:20px
+}
+.two{
+    color:rgba(210,140,100,0.8); 
+    background:rgb(100,100,100);
+    font-size:20px
+}
+.three{
+    text-decoration: overline;
+    color:rgb(246, 139, 223);
+    word-spacing: 20px;
+    white-space: pre-line;
+}
+#four{
+    color:yellow;
+    padding:10px 10px 10px 10px"
+}
