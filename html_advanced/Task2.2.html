@@ -6,25 +6,68 @@
 		<body>
 			<form action="http://httpbin.org/post" method="post">
 				<fieldset>
+					<fieldset>
 					<legend>Personal data </legend>
-					<label>First name <input type="text" name="Firstname"></label>
-					<br>
-					<br>
-					<label>Sunrname <input type="text" name="Sunrname"></label>
-					<br>
-					<br>
-					Sex<input type="radio" name="sex" value="Male" checked>Male
-					<input type="radio" name="sex" value="Female">Female
+                    <table>
+                        <tr>
+                            <td width="10%">
+					            First name    
+                            </td>
+                            <td>
+                                 <input type="text" name="Firstname"  required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+					            Sunrname
+                            </td>
+                            <td>
+                                <input type="text" name="Sunrname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+					               Sex
+                            </td>
+                            <td>
+                                <input type="radio" name="sex" value="Male" checked>Male
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                	            <input type="radio" name="sex" value="Female">Female
+                            </td>
+                        </tr>
+                    </table>
 				</fieldset>
 				<fieldset>
 					<legend> Contact Information </legend>
-					<label>Site <input type="text" name="Site"></label>
-					<br>
-					<br>
-					<label>Email <input type="email" name="Email"></label>
-					<br>
-					<br>
-					<label>Phone <input type="text" name="Phone"></label>
+                    <table>
+                        <tr>
+                            <td width="10%">
+                                Site
+                            </td>
+                            <td>
+                                 <input type="text" name="Site" required>
+					        </td>
+                        </tr>
+                        <tr>
+					        <td>
+					            Email
+					        </td>   
+                            <td>
+                                 <input type="email" name="Email" required>
+                            </td>
+                        </tr>
+                        <tr> 
+					        <td>
+                                Phone 
+					        </td>
+                            <td>
+                                <input type="text" name="Phone" required>
+                            </td>
+                        </tr>
+                    </table>
 				</fieldset>
 				<input type="submit">
 		</body>

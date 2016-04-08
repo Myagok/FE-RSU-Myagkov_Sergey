@@ -107,10 +107,15 @@
 					<input type="radio" name="sex" value="Female">Female
 					<br>
 					<br>
-					<label>Age <input type="text" name="Age"></label>
+					<label>Age <input type="number" name="Age" min="18" max="101"></label>
 					<br>
 					<br>
-					<label>Coutry of Residance<input type="text" name="Country"></label>
+					Coutry of Residance<select name="Country">
+                        <option value="rus">Russia</option>
+                        <option value="usa">USA</option>
+                        <option value="fr">France</option>
+                        <option value="ch">China</option>
+                        </select>
 					<br>
 					<br>
 					City <input type="radio" name="City" value="Ryazan">Ryazan
@@ -120,7 +125,7 @@
 					Photography <input type="file" name="img">
 					<br>
 					<br>
-					Title <select name=title multiple>
+					Title <select name="title" multiple>
 							<optgroup label="Technologies">
 								<option value="master">War Master </option>
 								<option value="adm"> Database Administrator</option>
@@ -150,7 +155,7 @@
 					<label>Phone <input type="text" name="Phone"></label>
 				</fieldset>
 					<br>
-					<label>Password <input type="text" name="Pass"></label>
+					<label>Password <input type="text" name="Pass" required></label>
 					<br>
 					<br>
 					<input type="submit" value="Отправить">
