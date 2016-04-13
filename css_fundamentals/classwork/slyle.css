@@ -1,0 +1,43 @@
+button{
+    height: 100px;
+    width: 100px;
+    text-align:center;
+    margin:5px 5px 5px 5px;
+    background: blue;
+    color:white;
+    border:2;
+    border-color: #fff;
+    transition: all 0.5s;}
+    .hig:hover{
+        background: #fff;
+        color:blue;
+        border: 0;
+    }
+    .fade:hover{
+        border:0;
+        background:#fff;  
+         
+    }
+    .boom:hover{
+        opacity: 0;
+        transform: scale(2,2)
+    }
+    .foc:hover{
+        border-width:20px;   
+    }
+    .rot:hover{
+       transform: rotate(90deg);
+    }
+    .knit:hover{
+        border: 0;
+        height: 0;
+    }
+    .Shrink:hover{
+        transform: scale(0,0);
+    }
+    .squeeze:hover{
+    transform: scale(1.5,0);
+    }
+    .Deform:hover{
+        transform: skew(45deg,45deg)
+    }

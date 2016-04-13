@@ -1,0 +1,176 @@
+.one{
+    height: 100px;
+    width: 100px;
+    background:green;
+    border-radius: 50px;
+}
+.two{
+  margin-top: 100px;
+  background: radial-gradient(circle closest-side,red 60px, white 61px);
+  width: 300px;
+  height: 200px;
+  border: 2px solid grey;
+}
+.three{
+    margin-top: 50px;
+    width:300px;
+    height: 100px;
+    border: 2px; 
+    background:linear-gradient(to top,rgb(144,144,232),aqua); 
+    border-radius:10px ;
+    transition:all 0.5s;
+    
+}
+.three:hover{   
+   box-shadow: 0 0 1px 4px rgba(100,100,234,0.4);
+}
+@media all and (max-width:700px) and (min-width:300px){
+    .adapt{
+        width: 300px
+    }
+}
+.adapt{
+    background: grey;
+}
+#Circles{
+
+	width:125px;
+	height:125px;
+	margin:auto;
+	transform:scale(0.6);
+}
+
+.circle{
+	position:absolute;
+	background-color:rgb(255,255,255);
+    height:24px;
+	width:24px;
+	border-radius:12px;
+	animation-name:cir;
+	animation-duration:1.2s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+}
+
+#c1{
+    top:51px;
+	left:0;
+	animation-delay:0.45s;
+}
+
+#c2{
+    top:15px;
+	left:15px;
+	animation-delay:0.6s;
+}
+
+#c3{
+    top:0;
+	left:51px;
+	animation-delay:0.75s;
+}
+
+#c4{
+	right:15px;
+	top:15px;
+	animation-delay:0.9s;
+
+}
+
+#c5{
+    top:51px;
+	right:0;
+	animation-delay:1.05s;
+}
+
+#c6{
+    bottom:15px;
+	right:15px;
+	animation-delay:1.2s;
+}
+
+#c7{
+    bottom:0;
+	left:51px;
+	animation-delay:1.35s;
+}
+
+#c8{
+    bottom:15px;
+	left:15px;
+	animation-delay:1.5s;
+}
+
+
+
+@keyframes cir{
+	0%{
+		background-color:rgb(255,0,0);
+	}
+
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+
+.box{
+    position: relative;
+    height: 100px;
+    width: 10px;
+    background: orange; 
+}
+#box1{bottom: 100px;
+        left: 15px;
+}
+#box2{bottom: 225px;
+        left: 300px;
+}
+.down{position: relative;
+    height: 10px;
+    width: 295px;
+    background: orange;
+    bottom:220px;
+    left:15px; }
+.ball{
+    position: relative;
+    height: 24px;
+    width:24px;
+    border-radius:12px;
+    animation-name:bal;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate; 
+    background: red;
+    bottom: 180px;
+    
+}
+@keyframes bal{
+    0%{left:27px;}
+    40%{transform: scale(1,1)}
+    50%{left: 138px;
+        bottom:115px; 
+       transform: scale(1,0.5) }
+     60%{transform: scale(1,1) }
+    100%{left: 276px;
+        bottom: 180px;}
+ 
+}
+.anim{
+    height: 50px;
+    width:50px;
+    background:linear-gradient(to left,rgb(144,144,232),aqua);
+    border-radius: 25px;
+ 
+    animation-name:animate;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-direction:normal; 
+}
+@keyframes animate{
+    
+    20%{border-radius: 0px;}
+    40%{background:linear-gradient(to bottom,rgb(11,144,232),rgb(244,11,122));}
+   60%{transform: skew(45deg,30deg);}
+   80%{transform: rotate(180deg);}
+  100%{background: radial-gradient(yellow,aqua);}
+}
