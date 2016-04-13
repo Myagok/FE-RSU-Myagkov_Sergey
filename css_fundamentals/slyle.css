@@ -1,0 +1,10 @@
+#one{
+    height: 50px;
+    width: 50px;
+    border: 1;
+    color:blue;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: .5s;
+}
