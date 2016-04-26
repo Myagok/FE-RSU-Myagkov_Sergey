@@ -284,4 +284,19 @@ console.log(del_arr([1,2,0,1,2,4,5,6],10));
         return sum;
     }
     console.log(sum_arr([1,2,3,4,'a']));
-    /* */
+    /*26. Write a JavaScript program to get the length of a JavaScript object */
+     get_length= function(input) {  
+    var i = 0, key;  
+    for (key in input) {  
+        if (input.hasOwnProperty(key)) i++;  
+    }  
+    return i; 
+     };
+    var stud = {   
+    name : "David ",   
+    sclass : "5",   
+    age : 12 };   
+    console.log(get_length(stud));
+    /*
+  
+    
