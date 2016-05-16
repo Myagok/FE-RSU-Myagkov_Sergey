@@ -1,24 +1,24 @@
 var a=1;
-var b="Hello"
+var b="Hello";
 console.log(a);
 console.log(b);
 function triangle(h,c) {
     s=1/2*h*c;
     console.log(s);
-};
+}
 triangle(3,2);
-var city=["Ryazan","Moscow","Sochi"]
+var city=["Ryazan","Moscow","Sochi"];
 for(i=0;i<city.length;i++){
-    console.log(city[i])
-};
-for(i=city.length-1;i>=0;i--){
     console.log(city[i]);
-};
+}
+for(i=city.length-1;i>=0;i--){
+   console.log(city[i]);
+}
 var i=city.length-1;
 while(i>=0){
     console.log(city[i]);
     i--;
-};
+}
 i=city.length;
 do{
     i--;
@@ -31,7 +31,7 @@ while(i>0);
 function proverka(a) {//проверка числа
     if(a>0){
         console.log("Is a pisitive number");
-    }else if(a==0){
+    }else if(a===0){
         console.log("Is zero!");
     }else{
         console.log("it is a negative number");
@@ -42,13 +42,13 @@ function proverka(a) {//проверка числа
     function fac(n){    //функция факториала
     if(n>0){
       for(i=1;i<=n;i++)
-           {s*=i;};
+           {s*=i;}
          console.log(s); 
     }else if(n<0){
-        console.log("wrong number")
+        console.log("wrong number");
     }
     else{
-        console.log(s)
+        console.log(s);
     }
     }
     fac(4);

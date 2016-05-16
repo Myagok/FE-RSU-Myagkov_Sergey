@@ -1,2 +1,2 @@
-var name=prompt("Your name?");
+var nam = prompt("Your name?");
 alert(name);
