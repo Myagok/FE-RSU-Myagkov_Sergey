@@ -239,11 +239,17 @@ console.log(del_arr([1,2,0,1,2,4,5,6],10));
         return input[0].toUpperCase()+input.slice(1);
     }
     console.log(first_letter('hi!Good morning'));
-    /* 21. Write a JavaScript function to convert a string into camel case*/
-    function convert_up(input) {
-        return input.toUpperCase();        
-    }
-    console.log(convert_up('hi!GoOd NIGth'));
+    /* 21.	Write a JavaScript function to convert a string into camel case */
+
+function camelize(str) {
+    return str.replace(/^([A-Z])|[\s-_](\w)/g, function(match, p1, p2, offset) {
+        if (p2) return p2.toUpperCase();
+        return p1.toLowerCase();
+    });
+}
+console.log(camelize("Java Script"));
+console.log(camelize("java-script"));
+console.log(camelize("Java Script Exercises"));
     /*22. Write a JavaScript function to find the highest value in an array*/
     function max_arr(input){
         var max=input[0];
@@ -284,19 +290,52 @@ console.log(del_arr([1,2,0,1,2,4,5,6],10));
         return sum;
     }
     console.log(sum_arr([1,2,3,4,'a']));
-    /*26. Write a JavaScript program to get the length of a JavaScript object */
-     get_length= function(input) {  
-    var i = 0, key;  
-    for (key in input) {  
-        if (input.hasOwnProperty(key)) i++;  
-    }  
-    return i; 
-     };
-    var stud = {   
-    name : "David ",   
-    sclass : "5",   
-    age : 12 };   
-    console.log(get_length(stud));
-    /*
-  
-    
+// 26.	Write a JavaScript program to get the length of a JavaScript object
+function isEmpty(obj) {
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var country = {
+    name: "Германия",
+    language: "немецкий",
+    capital: {
+        name: "Берлин",
+        population: 3375000,
+        year: {
+            bild: 1000,
+            end: 2016
+        }
+    }
+};
+var count = 0;
+var getLengthObj = function(obj) {
+    if ((!isEmpty(obj)) && (typeof obj !== "string")) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                count++;
+                getLengthObj(obj[key]);
+            }
+        }
+    }
+};
+
+getLengthObj(country);
+console.log(count);
+// 27.	Write a JavaScript program to list the properties of a JavaScript object
+var getKeys = function getKeys(obj) {
+    if ((!isEmpty(obj)) && (typeof obj !== "string")) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                console.log(key);
+                getKeys(obj[key]);
+            }
+        }
+    }
+};
+
+getKeys(country);
